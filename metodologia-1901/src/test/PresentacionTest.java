@@ -168,8 +168,8 @@ public class PresentacionTest extends javax.swing.JFrame {
             }
         }
         
-        
-       JOptionPane.showConfirmDialog(this,""+evaluar(p1,radios[indiceSeleccionado]));
+        System.out.println("El indice seleccionado es:"+indiceSeleccionado);
+      JOptionPane.showConfirmDialog(this,""+evaluar(p1,indiceSeleccionado));
     }//GEN-LAST:event_checarRespuestaActionPerformed
 
     /**
@@ -218,21 +218,17 @@ public class PresentacionTest extends javax.swing.JFrame {
     private javax.swing.JRadioButton radioOp5;
     // End of variables declaration//GEN-END:variables
 
-public boolean evaluar(Pregunta p,JRadioButton r){
-    boolean correcta=false;
-    //Que logica se pondría??
-    for(int i=0;i<p.opciones.length;i++){
-        if(opciones[i].titulo.equals(r.getText())){
-            if(p1.opciones[i].correcta){
-            correcta=true;
-            break;
-            }
-        }
-    }
+
+public boolean evaluar(Pregunta p, int indiceSeleccionado){
+boolean correcta=false;
+if(p.opciones[indiceSeleccionado].correcta){
+    correcta=true;
     
-    
-    return correcta;
+ }
+
+return correcta;
 }
 
 
 }
+    
