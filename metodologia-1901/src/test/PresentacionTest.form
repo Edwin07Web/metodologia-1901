@@ -88,6 +88,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jRadioButton1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioOp1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="radioOp2">
       <Properties>
@@ -120,6 +123,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="jRadioButton5"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioOp5ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="checarRespuesta">
       <Properties>
